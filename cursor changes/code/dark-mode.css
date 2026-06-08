@@ -1,0 +1,177 @@
+/* Dark mode overrides — applied when html has .dark-mode */
+
+html.dark-mode body {
+  background-color: #0f0f0f;
+  color: #f1f1f1;
+}
+
+html.dark-mode body .material-icons {
+  color: #f1f1f1;
+}
+
+html.dark-mode body .navbar {
+  background: #0f0f0f;
+  border-bottom: 1px solid transparent;
+}
+
+html.dark-mode body .navbar i:hover {
+  background: #272727;
+}
+
+html.dark-mode body .searchbar i {
+  background-color: #272727;
+}
+
+html.dark-mode body .search {
+  border-color: #303030;
+}
+
+html.dark-mode body .search input {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+html.dark-mode body .search input::placeholder {
+  color: #aaaaaa;
+}
+
+html.dark-mode body .search button {
+  background: #303030;
+  border-left-color: #303030;
+}
+
+html.dark-mode body .hovericons{
+  background: none;
+}
+
+html.dark-mode body .categories {
+  background: #0f0f0f;
+  overflow-y: scroll;
+  scrollbar-color: #0f0f0f;
+}
+
+html.dark-mode body .category-section {
+  border-bottom-color: #303030;
+}
+
+html.dark-mode body .category-heading {
+  color: #aaaaaa;
+}
+
+html.dark-mode body .category:hover,
+html.dark-mode body .category-heading:hover {
+  background: #272727;
+}
+
+html.dark-mode body .category.active,
+html.dark-mode body .active {
+  background: #383838;
+}
+
+html.dark-mode body .active:hover {
+  background: #383838;
+}
+
+html.dark-mode body .footer-section span,
+html.dark-mode body .copyright {
+  color: #aaaaaa;
+}
+
+html.dark-mode body .link a {
+  color: #aaaaaa;
+}
+
+html.dark-mode body .videos {
+  background: #0f0f0f;
+  border-top:none;
+}
+
+html.dark-mode body .linktarget {
+  color: #f1f1f1;
+}
+
+html.dark-mode body .video:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+html.dark-mode body .post-info,
+html.dark-mode body .post-date {
+  color: #aaaaaa;
+}
+
+html.dark-mode body .theme-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+html.dark-mode body .theme-toggle i {
+  color: #f1f1f1;
+}
+
+/* login page */
+
+html.dark-mode body .theme-toggle:hover {
+  background: #272727;
+  border-radius: 9999px;
+}
+
+html.dark-mode body .login-card {
+  background: #0f0f0f;
+  border-color: #303030;
+}
+
+html.dark-mode body .login-header h1,
+html.dark-mode body .login-subtitle,
+html.dark-mode body .login-logo,
+html.dark-mode body .welcome-text,
+html.dark-mode body .checkbox-label {
+  color: #e8eaed;
+  fill: currentColor;
+}
+
+html.dark-mode body .input-group input {
+  background: transparent;
+  color: #e8eaed;
+  border-color: #8e918f;
+}
+
+html.dark-mode body .input-group label {
+  background: #0f0f0f;
+  color: #c4c7c5;
+}
+
+html.dark-mode body .input-group input:focus + label,
+html.dark-mode body .input-group input:not(:placeholder-shown) + label {
+  color: #a8c7fa;
+}
+
+html.dark-mode body .input-group input:not(:focus):not(:placeholder-shown) + label {
+  color: #c4c7c5;
+}
+
+html.dark-mode body .guest-info,
+html.dark-mode body .language-select,
+html.dark-mode body .footer-links a {
+  color: #c4c7c5;
+}
+
+html.dark-mode body .footer-links a:hover {
+  color: #e8eaed;
+}
+
+html.dark-mode body .account-chip {
+  border-color: #303030;
+  color: #e8eaed;
+}
+
+html.dark-mode body .account-chip .material-icons {
+  color: #c4c7c5;
+}
+
+html.dark-mode body .text-link {
+  color: #a8c7fa;
+}

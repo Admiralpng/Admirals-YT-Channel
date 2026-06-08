@@ -1,0 +1,16 @@
+/* mobile screens */
+
+@media screen and (max-width: 480px) {
+    body {display: flex; flex-direction: column; max-width:100vw; width:100%}
+    .mainbody {display: flex;justify-content: center; max-width: 480px; width:100vw; min-height: 100vw; height: 100%;}
+    .categories {display: none;}
+    .videos {width: fit-content; min-height: 100vw; height: 100%;}
+    .video-grid{display: flex; max-width:100vw; width:fit-content}
+    .video {display: flex; flex-wrap: wrap; max-width:455px; width:fit-content; height: 100%;}
+    .videoupload{max-width: 455px; height: 100%;}
+    .thumbnail{max-width: 423px; height: 100%;}
+    .videopreview{max-width: 423px; height: 100%;}
+    .navbar{display: flex; flex-direction: row; flex-wrap: wrap; max-width: 480px; width: fit-content; height: 130px;z-index: 2; position: sticky;}
+    .search{max-width: 385px}
+    .navigation-icons{display: none;}
+}

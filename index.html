@@ -1,0 +1,986 @@
+<!doctype html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>YouTube</title>
+
+    <link rel="stylesheet" href="/code/style.css" />
+    <link rel="stylesheet" href="/code/responsive.css" />
+    <link rel="stylesheet" href="/cursor changes/code/theme-toggle.css" />
+    <link rel="stylesheet" href="/cursor changes/code/dark-mode.css" />
+    <script src="/cursor changes/code/theme-init.js"></script>
+    <link
+      rel="icon"
+      href="https://www.youtube.com/s/desktop/5ccc1a49/img/favicon_32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://www.youtube.com/s/desktop/5ccc1a49/img/favicon_48x48.png"
+      sizes="48x48"
+    />
+    <link
+      rel="icon"
+      href="https://www.youtube.com/s/desktop/5ccc1a49/img/favicon_96x96.png"
+      sizes="96x96"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- search-bar -->
+
+    <div class="navbar">
+      <div class="logo">
+        <i class="material-icons">menu</i>
+        <img
+          src="https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg"
+          alt="Youtube Logo"
+          aria-label="youtube home"
+          title="Youtube Home"
+        />
+      </div>
+      <div class="searchbar">
+        <form class="search" name="searchbar">
+          <input type="text" placeholder="Search" />
+          <button>
+            <span class="material-icons" aria-label="search" title="Search"
+              >search</span
+            >
+          </button>
+        </form>
+        <i
+          class="material-icons"
+          aria-label="voice-search"
+          title="Search with your voice"
+          >keyboard_voice</i
+        >
+      </div>
+      <div class="navigation-icons">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle dark mode"
+          title="Toggle dark mode"
+        >
+          <i class="material-icons theme-icon">dark_mode</i>
+        </button>
+        <i class="material-icons" aria-label="upload" title="Upload">upgrade</i>
+        <i
+          class="material-icons"
+          aria-label="notifications"
+          title="Notifications"
+          >notifications</i
+        >
+        <a
+          href="/cursor changes/login.html"
+          aria-label="account"
+          title="Sign in"
+          target="_blank"
+        >
+          <i class="material-icons">account_circle</i>
+        </a>
+      </div>
+    </div>
+
+    <div class="mainbody">
+      <!-- category-left-section -->
+
+      <div class="categories">
+        <div class="category-section">
+          <span class="category" aria-label="home" title="Home">
+            <i class="material-icons">home</i>
+            Home
+          </span>
+          <span class="category" aria-label="shorts" title="Shorts">
+            <i class="material-icons">explore</i>
+            Shorts
+          </span>
+        </div>
+        <div class="category-section">
+          <span
+            class="category-heading"
+            aria-label="subscriptions"
+            title="Subscriptions"
+          >
+            <h3>
+              Subscriptions
+              <i class="material-icons channels">keyboard_arrow_right</i>
+            </h3>
+          </span>
+          <span class="category" aria-label="zaio" title="Zaio">
+            <img
+              class="channels"
+              alt="channel icon"
+              width="24"
+              src="https://yt3.ggpht.com/IkYhbAbSKvy-EzdsDQy61LG1jR9a3TDTdBt94AHaUnQusAUbkJYxhaVTQkBUXMa7V6YOE311Vg=s68-c-k-c0x00ffffff-no-rj"
+            />
+            Zaio
+          </span>
+          <span class="category" aria-label="cmi" title="CMI">
+            <img
+              class="channels"
+              alt="channel icon"
+              width="24"
+              src="https://yt3.ggpht.com/wSqAf5WdxsGsl7ZMtlyfz3qKULo_URoFjmKky0gLThm_Jtu2wsVHMu-XzGZPAb-z8zeMBYUUMYA=s68-c-k-c0x00ffffff-no-rj"
+            />
+            CMI
+          </span>
+          <span
+            class="category"
+            aria-label="web dev for dummys"
+            title="Matt Crawford"
+          >
+            <img
+              class="channels"
+              alt="channel icon"
+              width="24"
+              src="https://yt3.ggpht.com/adfUScmnDgq57YzlvJr3DnqHv5WAAml4mIBW5F1c0xC-gwtH2cmc-j-PydceK5HDqTS_vgEg=s68-c-k-c0x00ffffff-no-rj"
+            />
+            Matt Crawford
+          </span>
+          <span class="category" aria-label="wiki how" title="Wiki-how">
+            <img
+              class="channels"
+              alt="channel icon"
+              width="24"
+              src="https://yt3.ggpht.com/ytc/AIdro_lAnt7otjj3Au0r0tPKfg6k8dLPTyIa3T5hAAia0EBjWrau=s68-c-k-c0x00ffffff-no-rj"
+            />
+            wikiHow
+          </span>
+        </div>
+        <div class="category-section">
+          <span class="category-heading" aria-label="you" title="You">
+            <h3>
+              You <i class="material-icons channels">keyboard_arrow_right</i>
+            </h3>
+          </span>
+          <span class="category" aria-label="your channel" title="Your channel">
+            <i class="material-icons">video_library</i>
+            Your channel
+          </span>
+          <span class="category" aria-label="history" title="History">
+            <i class="material-icons">history</i>
+            History </span
+          ><span class="category" aria-label="playlist" title="Playlists">
+            <i class="material-icons">playlist_play</i>
+            Playlists
+          </span>
+          <span class="category" aria-label="watch later" title="Watch later">
+            <i class="material-icons">watch_later</i>
+            Watch later
+          </span>
+          <span class="category" aria-label="liked videos" title="Liked videos">
+            <i class="material-icons">thumb_up</i>
+            Liked videos
+          </span>
+          <span class="category" aria-label="your videos" title="Your videos">
+            <i class="material-icons">smart_display</i>
+            Your videos
+          </span>
+          <span class="category" aria-label="downloads" title="Downloads">
+            <i class="material-icons" id="size-adjust">download_2</i>
+            Downloads
+          </span>
+        </div>
+        <div class="category-section">
+          <span class="category-heading" aria-label="explore" title="Explore">
+            <h3>Explore</h3>
+          </span>
+          <span class="category" aria-label="music" title="Music">
+            <i class="material-icons">music_note</i>
+            Music
+          </span>
+          <span class="category" aria-label="gaming" title="Gaming">
+            <i class="material-icons">sports_esports</i>
+            Gaming </span
+          ><span class="category" aria-label="news" title="News">
+            <i class="material-icons">article</i>
+            News
+          </span>
+          <span class="category" aria-label="expand menu" title="Expand more">
+            <i class="material-icons">expand_more</i>
+            Show More
+          </span>
+        </div>
+        <div class="category-section">
+          <span class="category" aria-label="settings" title="Settings">
+            <i class="material-icons">settings</i>
+            Settings
+          </span>
+          <span
+            class="category"
+            aria-label="report history"
+            title="Report history"
+          >
+            <i class="material-icons">history</i>
+            Report History
+          </span>
+          <span class="category" aria-label="help" title="Help">
+            <i class="material-icons">help</i>
+            Help
+          </span>
+          <span class="category" aria-label="feedback" title="Feedback">
+            <i class="material-icons">feedback</i>
+            Send Feedback
+          </span>
+        </div>
+        <div class="categories-footer">
+          <div class="footer-section">
+            <span class="link"
+              ><a href="https://www.youtube.com/about/">About</a></span
+            >
+            <span class="link"
+              ><a href="https://www.youtube.com/about/press/">Press</a></span
+            >
+            <span class="link"
+              ><a href="https://www.youtube.com/about/copyright/"
+                >Copyright</a
+              ></span
+            >
+            <span class="link"
+              ><a href="https://www.youtube.com/t/contact_us/"
+                >Contact Us</a
+              ></span
+            >
+            <span class="link"
+              ><a href="https://www.youtube.com/creators/">Creator</a></span
+            >
+            <span class="link"
+              ><a href="https://www.youtube.com/ads/">Advertise</a></span
+            >
+            <span class="link"
+              ><a href="https://developers.google.com/youtube"
+                >Developers</a
+              ></span
+            >
+          </div>
+          <div class="footer-section">
+            <span class="link"
+              ><a href="https://www.youtube.com/t/terms">Terms</a></span
+            >
+            <span class="link"
+              ><a href="https://www.youtube.com/t/privacy">Privacy</a></span
+            >
+            <span class="link"
+              ><a href="https://www.youtube.com/about/policies/"
+                >Policy & Safety</a
+              ></span
+            >
+            <span class="link"
+              ><a
+                href="https://www.youtube.com/howyoutubeworks?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen"
+                >How YouTube works</a
+              ></span
+            >
+            <span class="link"
+              ><a href="https://www.youtube.com/new">Test new features</a></span
+            >
+          </div>
+          <span class="copyright">&copy; 2026 Zaio YouTube Clone</span>
+        </div>
+      </div>
+
+      <!-- Video hud -->
+
+      <div class="videos">
+        <div class="video-grid">
+          <div class="video">
+            <div class="videoupload">
+              <a
+                class="linktarget"
+                href="https://www.youtube.com/watch?v=L6lLOy0flQM&list=TLPQMDcwNjIwMjYPfwR5hKhM9A&index=2&pp=iAQBsAgC"
+                target="_blank"
+              >
+                <div class="thumbnail">
+                  <img
+                    class="hoverimg active"
+                    id="1"
+                    src="https://i.ytimg.com/vi/L6lLOy0flQM/hq720.jpg?sqp=-oaymwFBCNAFEJQDSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGE8gZSg5MA8=&rs=AOn4CLACrGR8W_RQ6ax1kqzlM808kTovUg"
+                    alt="video preview"
+                  />
+                  <video
+                    class="videopreview active"
+                    id="1"
+                    src="/content/videoplayback.mp4"
+                    alt="video preview"
+                  ></video>
+                  <div class="hovericons">
+                    <button><i class="material-icons">volume_off</i></button>
+                    <button>
+                      <i class="material-icons">closed_caption</i>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <img
+                  class="channel-icon"
+                  alt="channel icon"
+                  width="24"
+                  src="https://yt3.ggpht.com/ytc/AIdro_lAnt7otjj3Au0r0tPKfg6k8dLPTyIa3T5hAAia0EBjWrau=s68-c-k-c0x00ffffff-no-rj"
+                />
+              </div>
+              <div class="video-title">
+                <a
+                  class="linktarget"
+                  href="https://www.youtube.com/watch?v=L6lLOy0flQM&list=TLPQMDcwNjIwMjYPfwR5hKhM9A&index=2&pp=iAQBsAgC"
+                  target="_blank"
+                >
+                  <p>How to make texting fun</p></a
+                >
+                <div class:post-info>
+                  <span>wikiHow</span>
+                  <div class:post-date>
+                    <span>235 views</span>
+                    <span>.</span>
+                    <span>2 years ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="videoupload">
+              <a
+                class="linktarget"
+                href="https://youtu.be/HfTXHrWMGVY?si=A508eye_d-UcVQyw"
+                target="_blank"
+              >
+                <div class="thumbnail">
+                  <img
+                    class="hoverimg active"
+                    id="2"
+                    src="https://i.ytimg.com/vi/HfTXHrWMGVY/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDU6cL27eBBM9VKwaLwQRjxqqKCsw"
+                    alt="video preview"
+                  />
+                  <video
+                    class="videopreview active"
+                    id="2"
+                    src="/content/videoplayback (3).mp4"
+                    alt="video preview"
+                  ></video>
+                  <div class="hovericons">
+                    <button><i class="material-icons">volume_off</i></button>
+                    <button>
+                      <i class="material-icons">closed_caption</i>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <img
+                  class="channel-icon"
+                  alt="channel icon"
+                  width="24"
+                  src="https://yt3.ggpht.com/ytc/AIdro_nO3F7DfVXaf6wsHPS_hF327ggeWUCwZSELb5DCWBL1aw=s68-c-k-c0x00ffffff-no-rj"
+                />
+              </div>
+              <div class="video-title">
+                <a
+                  class="linktarget"
+                  href="https://youtu.be/HfTXHrWMGVY?si=A508eye_d-UcVQyw"
+                  target="_blank"
+                >
+                  <p>Introduction to Web Development - Workshop 1</p></a
+                >
+                <div class:post-info>
+                  <span>Web Dev 101 For Dummies</span>
+                  <div class:post-date>
+                    <span>38k views</span>
+                    <span>.</span>
+                    <span>1 month ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="videoupload">
+              <a
+                class="linktarget"
+                href="https://youtu.be/0zccJG3jtzI?si=mW2BAe1wCqNHEs3l"
+                target="_blank"
+              >
+                <div class="thumbnail">
+                  <img
+                    class="hoverimg active"
+                    id="3"
+                    src="https://i.ytimg.com/vi/gUT7isxf6CA/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBgQfJ--xi87aCwCjRuwd4I6upwXg"
+                    alt="video preview"
+                  />
+                  <video
+                    class="videopreview active"
+                    id="3"
+                    src="/content/videoplayback (2).mp4"
+                    alt="video preview"
+                  ></video>
+                  <div class="hovericons">
+                    <button><i class="material-icons">volume_off</i></button>
+                    <button>
+                      <i class="material-icons">closed_caption</i>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <img
+                  class="channel-icon"
+                  alt="channel icon"
+                  width="24"
+                  src="https://yt3.ggpht.com/wSqAf5WdxsGsl7ZMtlyfz3qKULo_URoFjmKky0gLThm_Jtu2wsVHMu-XzGZPAb-z8zeMBYUUMYA=s68-c-k-c0x00ffffff-no-rj"
+                />
+              </div>
+              <div class="video-title">
+                <a
+                  class="linktarget"
+                  href="https://youtu.be/0zccJG3jtzI?si=mW2BAe1wCqNHEs3l"
+                  target="_blank"
+                >
+                  <p>CMI Found Spreading Misinformation</p></a
+                >
+                <div class:post-info>
+                  <span>CMI</span>
+                  <div class:post-date>
+                    <span>38k views</span>
+                    <span>.</span>
+                    <span>21 hrs ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="videoupload">
+              <a
+                class="linktarget"
+                href="https://www.youtube.com/live/BrnX_ytaLgY?si=vwjh8HIRmhiEJwd3"
+                target="_blank"
+              >
+                <div class="thumbnail">
+                  <img
+                    class="hoverimg active"
+                    id="4"
+                    src="https://i.ytimg.com/vi/BrnX_ytaLgY/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDA_bObkmyMvRyi3zGQP-TVavI2gg"
+                    alt="video preview"
+                  />
+                  <video
+                    class="videopreview active"
+                    id="4"
+                    src="/content/videoplayback (4).mp4"
+                    alt="video preview"
+                  ></video>
+                  <div class="hovericons">
+                    <button><i class="material-icons">volume_off</i></button>
+                    <button>
+                      <i class="material-icons">closed_caption</i>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <img
+                  class="channel-icon"
+                  alt="channel icon"
+                  width="24"
+                  src="https://yt3.ggpht.com/IkYhbAbSKvy-EzdsDQy61LG1jR9a3TDTdBt94AHaUnQusAUbkJYxhaVTQkBUXMa7V6YOE311Vg=s68-c-k-c0x00ffffff-no-rj"
+                />
+              </div>
+              <div class="video-title">
+                <a
+                  class="linktarget"
+                  href="https://www.youtube.com/live/BrnX_ytaLgY?si=vwjh8HIRmhiEJwd3"
+                  target="_blank"
+                >
+                  <p>Zaio Institute of Technology - Class of 2026</p></a
+                >
+                <div class:post-info>
+                  <span>Zaio</span>
+                  <div class:post-date>
+                    <span>800 views</span>
+                    <span>.</span>
+                    <span>2 months ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="videoupload">
+              <a
+                class="linktarget"
+                href="https://youtu.be/QM8Shgu-dFs?si=6a6pRGoeVmuTWKG9"
+                target="_blank"
+              >
+                <div class="thumbnail">
+                  <img
+                    class="hoverimg active"
+                    id="5"
+                    src="https://i.ytimg.com/vi/QM8Shgu-dFs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAe0avRDmbVzLAgsSswaOnNbHwOJg"
+                    alt="video preview"
+                  />
+                  <video
+                    class="videopreview active"
+                    id="5"
+                    src="/content/videoplayback (1).mp4"
+                    alt="video preview"
+                  ></video>
+                  <div class="hovericons">
+                    <button><i class="material-icons">volume_off</i></button>
+                    <button>
+                      <i class="material-icons">closed_caption</i>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <img
+                  class="channel-icon"
+                  alt="channel icon"
+                  width="24"
+                  src="https://yt3.ggpht.com/adfUScmnDgq57YzlvJr3DnqHv5WAAml4mIBW5F1c0xC-gwtH2cmc-j-PydceK5HDqTS_vgEg=s68-c-k-c0x00ffffff-no-rj"
+                />
+              </div>
+              <div class="video-title">
+                <a
+                  class="linktarget"
+                  href="https://youtu.be/QM8Shgu-dFs?si=6a6pRGoeVmuTWKG9"
+                  target="_blank"
+                >
+                  <p>How To Delete Your Netflix History</p></a
+                >
+                <div class:post-info>
+                  <span>Matt Crawford</span>
+                  <div class:post-date>
+                    <span>9.2k views</span>
+                    <span>.</span>
+                    <span>10 months ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="videoupload">
+              <a
+                class="linktarget"
+                href="https://www.youtube.com/live/leegsjSwXBs?si=Azva_O_F8E13gLtA"
+                target="_blank"
+              >
+                <div class="thumbnail">
+                  <img
+                    class="hoverimg active"
+                    id="6"
+                    src="https://i.ytimg.com/vi/leegsjSwXBs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCayNvMAPYA6A8Be1sgAY8hOvI7bg"
+                    alt="video preview"
+                  />
+                  <video
+                    class="videopreview active"
+                    id="6"
+                    src="/content/videoplayback (4).mp4"
+                    alt="video preview"
+                  ></video>
+                  <div class="hovericons">
+                    <button><i class="material-icons">volume_off</i></button>
+                    <button>
+                      <i class="material-icons">closed_caption</i>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <img
+                  class="channel-icon"
+                  alt="channel icon"
+                  width="24"
+                  src="https://yt3.ggpht.com/IkYhbAbSKvy-EzdsDQy61LG1jR9a3TDTdBt94AHaUnQusAUbkJYxhaVTQkBUXMa7V6YOE311Vg=s68-c-k-c0x00ffffff-no-rj"
+                />
+              </div>
+              <div class="video-title">
+                <a
+                  class="linktarget"
+                  href="https://www.youtube.com/live/leegsjSwXBs?si=Azva_O_F8E13gLtA"
+                  target="_blank"
+                >
+                  <p>Coding Bootcamp with - Zaio</p></a
+                >
+                <div class:post-info>
+                  <span>Zaio</span>
+                  <div class:post-date>
+                    <span>976 views</span>
+                    <span>.</span>
+                    <span>2 years ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="videoupload">
+              <a
+                class="linktarget"
+                href="https://youtu.be/0zccJG3jtzI?si=mW2BAe1wCqNHEs3l"
+                target="_blank"
+              >
+                <div class="thumbnail">
+                  <img
+                    class="hoverimg active"
+                    id="7"
+                    src="https://i.ytimg.com/vi/gUT7isxf6CA/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBgQfJ--xi87aCwCjRuwd4I6upwXg"
+                    alt="video preview"
+                  />
+                  <video
+                    class="videopreview active"
+                    id="7"
+                    src="/content/videoplayback (2).mp4"
+                    alt="video preview"
+                  ></video>
+                  <div class="hovericons">
+                    <button><i class="material-icons">volume_off</i></button>
+                    <button>
+                      <i class="material-icons">closed_caption</i>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <img
+                  class="channel-icon"
+                  alt="channel icon"
+                  width="24"
+                  src="https://yt3.ggpht.com/wSqAf5WdxsGsl7ZMtlyfz3qKULo_URoFjmKky0gLThm_Jtu2wsVHMu-XzGZPAb-z8zeMBYUUMYA=s68-c-k-c0x00ffffff-no-rj"
+                />
+              </div>
+              <div class="video-title">
+                <a
+                  class="linktarget"
+                  href="https://youtu.be/0zccJG3jtzI?si=mW2BAe1wCqNHEs3l"
+                  target="_blank"
+                >
+                  <p>CMI Found Spreading Misinformation</p></a
+                >
+                <div class:post-info>
+                  <span>CMI</span>
+                  <div class:post-date>
+                    <span>38k views</span>
+                    <span>.</span>
+                    <span>21 hrs ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="videoupload">
+              <a
+                class="linktarget"
+                href="https://www.youtube.com/watch?v=L6lLOy0flQM&list=TLPQMDcwNjIwMjYPfwR5hKhM9A&index=2&pp=iAQBsAgC"
+                target="_blank"
+              >
+                <div class="thumbnail">
+                  <img
+                    class="hoverimg active"
+                    id="8"
+                    src="https://i.ytimg.com/vi/L6lLOy0flQM/hq720.jpg?sqp=-oaymwFBCNAFEJQDSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGE8gZSg5MA8=&rs=AOn4CLACrGR8W_RQ6ax1kqzlM808kTovUg"
+                    alt="video preview"
+                  />
+                  <video
+                    class="videopreview active"
+                    id="8"
+                    src="/content/videoplayback.mp4"
+                    alt="video preview"
+                  ></video>
+                  <div class="hovericons">
+                    <button><i class="material-icons">volume_off</i></button>
+                    <button>
+                      <i class="material-icons">closed_caption</i>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <img
+                  class="channel-icon"
+                  alt="channel icon"
+                  width="24"
+                  src="https://yt3.ggpht.com/ytc/AIdro_lAnt7otjj3Au0r0tPKfg6k8dLPTyIa3T5hAAia0EBjWrau=s68-c-k-c0x00ffffff-no-rj"
+                />
+              </div>
+              <div class="video-title">
+                <a
+                  class="linktarget"
+                  href="https://www.youtube.com/watch?v=L6lLOy0flQM&list=TLPQMDcwNjIwMjYPfwR5hKhM9A&index=2&pp=iAQBsAgC"
+                  target="_blank"
+                >
+                  <p>How to make texting fun</p></a
+                >
+                <div class:post-info>
+                  <span>wikiHow</span>
+                  <div class:post-date>
+                    <span>235 views</span>
+                    <span>.</span>
+                    <span>2 years ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="videoupload">
+              <a
+                class="linktarget"
+                href="https://youtu.be/QM8Shgu-dFs?si=6a6pRGoeVmuTWKG9"
+                target="_blank"
+              >
+                <div class="thumbnail">
+                  <img
+                    class="hoverimg active"
+                    id="9"
+                    src="https://i.ytimg.com/vi/QM8Shgu-dFs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAe0avRDmbVzLAgsSswaOnNbHwOJg"
+                    alt="video preview"
+                  />
+                  <video
+                    class="videopreview active"
+                    id="9"
+                    src="/content/videoplayback (1).mp4"
+                    alt="video preview"
+                  ></video>
+                  <div class="hovericons">
+                    <button><i class="material-icons">volume_off</i></button>
+                    <button>
+                      <i class="material-icons">closed_caption</i>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <img
+                  class="channel-icon"
+                  alt="channel icon"
+                  width="24"
+                  src="https://yt3.ggpht.com/adfUScmnDgq57YzlvJr3DnqHv5WAAml4mIBW5F1c0xC-gwtH2cmc-j-PydceK5HDqTS_vgEg=s68-c-k-c0x00ffffff-no-rj"
+                />
+              </div>
+              <div class="video-title">
+                <a
+                  class="linktarget"
+                  href="https://youtu.be/QM8Shgu-dFs?si=6a6pRGoeVmuTWKG9"
+                  target="_blank"
+                >
+                  <p>How To Delete Your Netflix History</p></a
+                >
+                <div class:post-info>
+                  <span>Matt Crawford</span>
+                  <div class:post-date>
+                    <span>9.2k views</span>
+                    <span>.</span>
+                    <span>10 months ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="videoupload">
+              <a
+                class="linktarget"
+                href="https://youtu.be/HfTXHrWMGVY?si=A508eye_d-UcVQyw"
+                target="_blank"
+              >
+                <div class="thumbnail">
+                  <img
+                    class="hoverimg active"
+                    id="10"
+                    src="https://i.ytimg.com/vi/HfTXHrWMGVY/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDU6cL27eBBM9VKwaLwQRjxqqKCsw"
+                    alt="video preview"
+                  />
+                  <video
+                    class="videopreview active"
+                    id="10"
+                    src="/content/videoplayback (3).mp4"
+                    alt="video preview"
+                  ></video>
+                  <div class="hovericons">
+                    <button><i class="material-icons">volume_off</i></button>
+                    <button>
+                      <i class="material-icons">closed_caption</i>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <img
+                  class="channel-icon"
+                  alt="channel icon"
+                  width="24"
+                  src="https://yt3.ggpht.com/ytc/AIdro_nO3F7DfVXaf6wsHPS_hF327ggeWUCwZSELb5DCWBL1aw=s68-c-k-c0x00ffffff-no-rj"
+                />
+              </div>
+              <div class="video-title">
+                <a
+                  class="linktarget"
+                  href="https://youtu.be/HfTXHrWMGVY?si=A508eye_d-UcVQyw"
+                  target="_blank"
+                >
+                  <p>Introduction to Web Development - Workshop 1</p></a
+                >
+                <div class:post-info>
+                  <span>Web Dev 101 For Dummies</span>
+                  <div class:post-date>
+                    <span>38k views</span>
+                    <span>.</span>
+                    <span>1 month ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="videoupload">
+              <a
+                class="linktarget"
+                href="https://www.youtube.com/live/leegsjSwXBs?si=Azva_O_F8E13gLtA"
+                target="_blank"
+              >
+                <div class="thumbnail">
+                  <img
+                    class="hoverimg active"
+                    id="11"
+                    src="https://i.ytimg.com/vi/leegsjSwXBs/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCayNvMAPYA6A8Be1sgAY8hOvI7bg"
+                    alt="video preview"
+                  />
+                  <video
+                    class="videopreview active"
+                    id="11"
+                    src="/content/videoplayback (4).mp4"
+                    alt="video preview"
+                  ></video>
+                  <div class="hovericons">
+                    <button><i class="material-icons">volume_off</i></button>
+                    <button>
+                      <i class="material-icons">closed_caption</i>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <img
+                  class="channel-icon"
+                  alt="channel icon"
+                  width="24"
+                  src="https://yt3.ggpht.com/IkYhbAbSKvy-EzdsDQy61LG1jR9a3TDTdBt94AHaUnQusAUbkJYxhaVTQkBUXMa7V6YOE311Vg=s68-c-k-c0x00ffffff-no-rj"
+                />
+              </div>
+              <div class="video-title">
+                <a
+                  class="linktarget"
+                  href="https://www.youtube.com/live/leegsjSwXBs?si=Azva_O_F8E13gLtA"
+                  target="_blank"
+                >
+                  <p>Coding Bootcamp with - Zaio</p></a
+                >
+                <div class:post-info>
+                  <span>Zaio</span>
+                  <div class:post-date>
+                    <span>976 views</span>
+                    <span>.</span>
+                    <span>2 years ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="videoupload">
+              <a
+                class="linktarget"
+                href="https://www.youtube.com/live/BrnX_ytaLgY?si=vwjh8HIRmhiEJwd3"
+                target="_blank"
+              >
+                <div class="thumbnail">
+                  <img
+                    class="hoverimg active"
+                    id="12"
+                    src="https://i.ytimg.com/vi/BrnX_ytaLgY/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDA_bObkmyMvRyi3zGQP-TVavI2gg"
+                    alt="video preview"
+                  />
+                  <video
+                    class="videopreview active"
+                    id="12"
+                    src="/content/videoplayback (4).mp4"
+                    alt="video preview"
+                  ></video>
+                  <div class="hovericons">
+                    <button><i class="material-icons">volume_off</i></button>
+                    <button>
+                      <i class="material-icons">closed_caption</i>
+                    </button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="details">
+              <div class="profile">
+                <img
+                  class="channel-icon"
+                  alt="channel icon"
+                  width="24"
+                  src="https://yt3.ggpht.com/IkYhbAbSKvy-EzdsDQy61LG1jR9a3TDTdBt94AHaUnQusAUbkJYxhaVTQkBUXMa7V6YOE311Vg=s68-c-k-c0x00ffffff-no-rj"
+                />
+              </div>
+              <div class="video-title">
+                <a
+                  class="linktarget"
+                  href="https://www.youtube.com/live/BrnX_ytaLgY?si=vwjh8HIRmhiEJwd3"
+                  target="_blank"
+                >
+                  <p>Zaio Institute of Technology - Class of 2026</p></a
+                >
+                <div class:post-info>
+                  <span>Zaio</span>
+                  <div class:post-date>
+                    <span>800 views</span>
+                    <span>.</span>
+                    <span>2 months ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Java Script -->
+
+    <script src="/cursor changes/code/theme.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

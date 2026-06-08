@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    color: #202124;
+    min-height: 100vh;
+}
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 48px 24px 24px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 48px 40px 36px;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.login-logo {
+    width: 75px;
+    margin-bottom: 8px;
+}
+
+.login-header h1 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #202124;
+    margin-bottom: 8px;
+}
+
+.login-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #202124;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form.hidden {
+    display: none;
+}
+
+.input-group {
+    position: relative;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 56px;
+    padding: 13px 15px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #202124;
+    border: 1px solid #747775;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border: 2px solid #0b57d0;
+    padding: 12px 14px;
+}
+
+.input-group label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #444746;
+    background: #fff;
+    padding: 0 4px;
+    pointer-events: none;
+    transition: all 0.15s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 12px;
+    color: #0b57d0;
+}
+
+.input-group input:not(:focus):not(:placeholder-shown) + label {
+    color: #444746;
+}
+
+.text-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0b57d0;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.guest-info {
+    font-size: 14px;
+    color: #444746;
+    line-height: 1.5;
+    margin-top: 48px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.btn-primary {
+    background: #0b57d0;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    background: #0842a0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.account-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #dadce0;
+    border-radius: 16px;
+    padding: 4px 8px 4px 4px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #202124;
+    width: fit-content;
+}
+
+.account-chip .material-icons {
+    font-size: 20px;
+    color: #5f6368;
+}
+
+.chip-change {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.chip-change .material-icons {
+    font-size: 18px;
+}
+
+.welcome-text {
+    font-size: 38px;
+    font-weight: 400;
+    color: #202124;
+    margin-bottom: 8px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: #202124;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #0b57d0;
+    cursor: pointer;
+}
+
+.login-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    padding-top: 24px;
+}
+
+.language-select {
+    font-family: inherit;
+    font-size: 12px;
+    color: #444746;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    font-size: 12px;
+    color: #444746;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #202124;
+}
+
+@media screen and (max-width: 600px) {
+    .login-page {
+        padding: 24px 16px 16px;
+    }
+
+    .login-card {
+        border: none;
+        padding: 24px 0;
+    }
+
+    .welcome-text {
+        font-size: 28px;
+    }
+
+    .login-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}

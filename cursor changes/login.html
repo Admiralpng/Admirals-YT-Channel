@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign in - YouTube</title>
+
+    <link rel="stylesheet" href="/cursor changes/login.css" />
+    <link rel="stylesheet" href="/cursor changes/code/theme-toggle.css" />
+    <link rel="stylesheet" href="/cursor changes/code/dark-mode.css" />
+    <script src="/cursor changes/code/theme-init.js"></script>
+    <link
+      rel="icon"
+      href="https://www.youtube.com/s/desktop/5ccc1a49/img/favicon_32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://www.youtube.com/s/desktop/5ccc1a49/img/favicon_48x48.png"
+      sizes="48x48"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button
+      type="button"
+      class="theme-toggle"
+      id="theme-toggle"
+      aria-label="Toggle dark mode"
+      title="Toggle dark mode"
+    >
+      <i class="material-icons theme-icon">dark_mode</i>
+    </button>
+
+    <main class="login-page">
+      <div class="login-card">
+        <div class="login-header">
+          <img
+            src="https://www.vectorlogo.zone/logos/youtube/youtube-ar21.svg"
+            alt="YouTube"
+            class="login-logo"
+          />
+          <h1>Sign in</h1>
+          <p class="login-subtitle">to continue to YouTube</p>
+        </div>
+
+        <!-- Step 1: Email -->
+        <form class="login-form" id="email-form">
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder=" "
+              autocomplete="email"
+              required
+            />
+            <label for="email">Email or phone</label>
+          </div>
+          <a href="#" class="text-link">Forgot email?</a>
+          <p class="guest-info">
+            Not your computer? Use Guest mode to sign in privately.
+            <a href="#" class="text-link">Learn more about using Guest mode</a>
+          </p>
+          <div class="form-actions">
+            <a href="#" class="text-link create-account">Create account</a>
+            <button type="submit" class="btn-primary">Next</button>
+          </div>
+        </form>
+
+        <!-- Step 2: Password -->
+        <form class="login-form hidden" id="password-form">
+          <div class="account-chip" id="account-chip">
+            <span class="material-icons">account_circle</span>
+            <span id="display-email"></span>
+            <button type="button" class="chip-change" id="change-account">
+              <span class="material-icons">arrow_drop_down</span>
+            </button>
+          </div>
+          <p class="welcome-text">Welcome</p>
+          <div class="input-group">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder=" "
+              autocomplete="current-password"
+              required
+            />
+            <label for="password">Enter your password</label>
+          </div>
+          <label class="checkbox-label">
+            <input type="checkbox" id="show-password" />
+            <span>Show password</span>
+          </label>
+          <div class="form-actions">
+            <a href="#" class="text-link">Forgot password?</a>
+            <button type="submit" class="btn-primary">Next</button>
+          </div>
+        </form>
+      </div>
+
+      <footer class="login-footer">
+        <select class="language-select" aria-label="Language">
+          <option value="en">English (United States)</option>
+          <option value="af">Afrikaans</option>
+          <option value="zu">isiZulu</option>
+        </select>
+        <nav class="footer-links">
+          <a href="#">Help</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </nav>
+      </footer>
+    </main>
+
+    <script src="/cursor changes/code/theme.js"></script>
+    <script src="/code/login.js"></script>
+  </body>
+</html>
